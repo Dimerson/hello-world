@@ -4,9 +4,8 @@ int main()
 {
 	int x = 3;
 	int y = 5;
-	int z = 0;
 
-	while(x+y+z != 8);
+	while(x+y != 8);
 
 	return 0;
 }

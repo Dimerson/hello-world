@@ -1,5 +1,8 @@
-language: C
-C:
- - "gcc version 5.4.0"
+language: c
+sudo: false # only for faster builds
+script:
+  - clang -coverage -O0 main.c -o main
+  - ./main
 
-script: main.c
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
