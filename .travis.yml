@@ -1,0 +1,5 @@
+language: C
+C:
+ - "gcc version 5.4.0"
+
+script: gulp travis
